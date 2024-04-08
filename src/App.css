@@ -25,6 +25,13 @@
   color: white;
 }
 
+.header_text span {
+  background: linear-gradient(110.6deg, rgb(132, 55, 165) 6.3%, rgb(244, 48, 63) 61.7%, rgb(247, 121, 72) 90.6%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .header_text p {
   font-size: 15px;
   font-family:"Roboto Slab", serif;

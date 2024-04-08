@@ -21,7 +21,7 @@ const Main = () => {
         <img src="Logo.png" alt="Logo" className='main_logo'/>
         <div className="header">
             <div className="header_text">
-                <h1>INTRODUCING: SynCode</h1>
+                <h1>INTRODUCING: <span>SynCode</span></h1>
                 <p>Revolutionize teamwork with SynCode, a real-time web based code editor like Google Docs for projects.
                     Empower multiple developers to collaborate seamlessly on the same codebase, fostering instant feedback & unparalleled efficiency.
                 </p>
