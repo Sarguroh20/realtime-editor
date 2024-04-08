@@ -3,19 +3,47 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@codemirror-toolkit/react": "^0.6.0",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "browserify-zlib": "^0.2.0",
+    "codemirror": "^5.65.16",
+    "crypto-browserify": "^3.12.0",
+    "express": "^4.18.3",
+    "framer-motion": "^11.0.25",
+    "https-browserify": "^1.0.0",
+    "lottie-web": "^5.12.2",
+    "node-polyfill-webpack-plugin": "^3.0.0",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
     "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
+    "react-avatar": "^5.0.3",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "^5.0.1",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "timers-browserify": "^2.0.12",
+    "uuid": "^9.0.1",
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.91.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "server:dev": "nodemon server.js",
+    "server:prod": "node server.js",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +62,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "nodemon": "^3.1.0"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
