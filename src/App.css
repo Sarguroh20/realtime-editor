@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+.main_logo {
+  width: 10%;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: -3% 5%;
+}
+
+.header .header_text {
+  padding-right: 45px;
+  width: 95%;
+}
+
+.header_text h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-family: "Merriweather";
+  font-weight:500;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header_text p {
+  font-size: 15px;
+  font-family:"Roboto Slab", serif;
+  text-align: justify;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header_text .trybtn {
+  background: linear-gradient(110.6deg, rgb(132, 55, 165) 6.3%, rgb(244, 48, 63) 61.7%, rgb(247, 121, 72) 90.6%);
+  margin-left: auto;
+  font-weight: bold;
+  color: #141021;
+}
+
+.homePageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.formWrapper {
+  background: #07011a;
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  max-width: 90%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  background: linear-gradient(110.6deg, rgb(132, 55, 165) 6.3%, rgb(244, 48, 63) 61.7%, rgb(247, 121, 72) 90.6%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLabel {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.homePageLogo {
+  height: 130px;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputBox {
+   padding: 10px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   margin-bottom: 14px;
+   background: #eee;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Merriweather";
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.joinBtn, .leaveBtn {
+  background: linear-gradient(110.6deg, rgb(132, 55, 165) 6.3%, rgb(244, 48, 63) 61.7%, rgb(247, 121, 72) 90.6%);
+  width: 100px;
+  margin-left: auto;
+  font-weight: bold;
+  color: #141021;
+}
+
+.trybtn:hover, .joinBtn:hover, .leaveBtn:hover {
+  background-color: transparent;
+  border: 3px solid #fff;
+  transition: all .10s ease-in-out;
+  color: #fff;
+}
+
+.createInfo {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createNewBtn {
+  background: linear-gradient(110.6deg, rgb(132, 55, 165) 6.3%, rgb(244, 48, 63) 61.7%, rgb(247, 121, 72) 90.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+footer a:hover, .createNewBtn:hover {
+  border-color: #b988e6;
+  transition: all 0.3s ease-in-out;
+}
+
+.mainWrap {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+
+.aside {
+  background: #07011a;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.asideInner {
+  flex: 1;
+
+}
+
+.clientsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.userName {
+  margin-top: 10px;
+}
+
+.logo {
+  border-bottom: 1px solid #424242;
+  padding-bottom: 10px;
+}
+
+.LogoImage {
+  height: 120px;
+}
+
+.leaveBtn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.CodeMirror {
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
 }
