@@ -8,7 +8,7 @@ import 'codemirror/addon/edit/closebrackets';
 // import { Socket } from 'socket.io';
 import ACTIONS from '../Actions';
 
-const Editor = ({socketRef, roomId, onCodeChange}) => {
+const Editor = ({socketRef, roomId, selectedLanguage, onCodeChange}) => {
   const editorRef = useRef(null);
   useEffect(() => {
     async function init() {
@@ -32,6 +32,7 @@ const Editor = ({socketRef, roomId, onCodeChange}) => {
           socketRef.current.emit(ACTIONS.CODE_CHANGE, {
             roomId,
             code,
+            selectedLanguage
           });
         }
         // console.log(code);

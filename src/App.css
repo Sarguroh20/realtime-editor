@@ -155,6 +155,7 @@ footer a:hover, .createNewBtn:hover {
 .mainWrap {
   display: grid;
   grid-template-columns: 230px 1fr;
+  height: 75vh;
 }
 
 .aside {
